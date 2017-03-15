@@ -1,0 +1,23 @@
+<li uib-accordion-group class="panel-default" heading="{{galleryItemCtrl.gallery.name | uppercase}}" class="gallery-item component">
+  <div class="current-item" ng-if="!galleryItemCtrl.showEditGallery">
+    <div>
+      <span class="item-label">name:</span>
+      <span>{{galleryItemCtrl.gallery.name | uppercase}}</span>
+    </div>
+
+    <div class="item-label">
+      <span class="item-label">description:</span>
+      <span>{{galleryItemCtrl.gallery.desc | lowercase}}</span>
+    </div>
+
+    <div class="item-label">
+      <span class="item-label">created:</span>
+      <span>{{galleryItemCtrl.gallery.created | date : short}}</span>
+    </div>
+  </div>
+
+  <edit-gallery ng-if="galleryItemCtrl.showEditGallery" gallery="galleryItemCtrl.gallery"></edit-gallery>
+
+  <button class="btn-std" ng-click="galleryItemCtrl.showEditGallery=!galleryItemCtrl.showEditGallery" type="button" name="edit">edit</button>
+  <button class="btn-std" ng-click="galleryItemCtrl.deleteGallery()" type="button" name="delete">delete</button>
+</li>

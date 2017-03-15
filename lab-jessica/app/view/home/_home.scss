@@ -1,0 +1,27 @@
+@import "../../scss/lib/theme/_vars.scss";
+
+.home {
+  background-color: grey;
+  padding-bottom: 1em;
+}
+
+.home-body {
+  width: 95%;
+  margin: auto;
+}
+
+.component {
+  padding: 1em;
+  background-color: $color-light-blue;
+  margin: auto;
+}
+
+@media only screen and (max-width: 580px) {
+  .home-body {
+    width: 100%;
+  }
+
+  .component {
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+@import "../../../scss/lib/theme/_vars.scss";
+
+.create-gallery {
+  h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .input-std {
+    box-sizing: border-box;
+    width: 40%;
+    display: block;
+    margin: 1em auto;
+    padding: 1.3em;
+  }
+
+  .btn-std {
+    display: block;
+    margin: auto;
+  }
+
+}

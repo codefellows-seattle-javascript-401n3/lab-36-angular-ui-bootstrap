@@ -1,0 +1,44 @@
+@import "../../scss/lib/theme/_vars.scss";
+.join-container {
+  padding: 2em;
+
+  p {
+    display: inline;
+    font-weight: lighter;
+  }
+
+  a {
+    margin-left: 0.3em;
+    text-decoration: none;
+    color: $color-black;
+    font-weight: bold;
+  }
+}
+
+.join-inner {
+  width: 100%;
+  margin: auto;
+}
+
+.landing {
+  width: 60%;
+  background-color: $color-tertiary;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  .input-std {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    margin: 1em auto;
+    padding: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .landing {
+    width: 100%;
+  }
+}

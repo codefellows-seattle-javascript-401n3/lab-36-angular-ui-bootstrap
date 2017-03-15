@@ -1,0 +1,13 @@
+@import "../theme/_vars.scss";
+
+.input-std {
+  display: block;
+  padding: 1em;
+}
+
+.btn-std {
+  border: none;
+  background: $color-black;
+  color: $color-white;
+  padding: 1em;
+}
