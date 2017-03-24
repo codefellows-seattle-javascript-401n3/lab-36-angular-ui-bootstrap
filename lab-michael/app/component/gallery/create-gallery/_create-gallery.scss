@@ -1,0 +1,12 @@
+@import "../../../scss/lib/theme/_vars";
+
+.create-gallery {
+  input[type="text"] {
+    margin-bottom: $gutter-sm;
+  }
+  button {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2% 6%;
+  }
+}

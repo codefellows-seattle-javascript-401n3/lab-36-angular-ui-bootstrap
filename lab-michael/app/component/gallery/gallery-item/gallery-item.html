@@ -1,0 +1,25 @@
+<!-- <li class="gallery-item"> -->
+  <div class="current-item" ng-if="!galleryItemCtrl.showEditGallery">
+    <hr />
+    <p>
+      <span class="item-label">Name:</span>
+      <span>{{ galleryItemCtrl.gallery.name | uppercase }}</span>
+    </p>
+
+    <div>
+      <span class="item-label">Description:</span>
+      <span>{{ galleryItemCtrl.gallery.desc | lowercase }}</span>
+
+    </div>
+  </div>
+  <edit-gallery ng-if="galleryItemCtrl.showEditGallery" gallery="galleryItemCtrl.gallery"></edit-gallery>
+<br>
+<div class="mod-btns">
+    <button class=btn-std ng-click="galleryItemCtrl.showEditGallery = !galleryItemCtrl.showEditGallery">Make edits</button>
+    <button class="btn-std del-btn" ng-click="galleryItemCtrl.deleteGallery()">Delete</button>
+</div>
+<div>
+  <br />
+  <span class="item-label">Created:</span>
+  <span>{{ galleryItemCtrl.gallery.created | date : short}}</span>
+</div>

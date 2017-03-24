@@ -1,0 +1,22 @@
+<section class="home">
+  <input class="input-std"
+  ng-model="homeCtrl.filterSearch"
+  type="text"
+  name="search"
+  placeholder="fuzzy search">
+  <br>
+    <create-gallery></create-gallery>
+
+      <div class="gallery-items-container">
+        <gallery-item
+         ng-repeat="item in homeCtrl.galleries | fuzzySearch : homeCtrl.filterSearch | orderBy : 'asc'"
+         gallery="item"
+         delete-done="homeCtrl.galleryDeleteDone(galleryData)"
+         ng-click="homeCtrl.currentGallery = item">
+       </gallery-item>
+      </div>
+        <thumbnail-container
+        ng-if="homeCtrl.currentGallery"
+        gallery="homeCtrl.currentGallery">
+        </thumbnail-container>
+</section>
