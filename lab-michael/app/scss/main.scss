@@ -1,0 +1,19 @@
+// CSS THEME
+@import "lib/theme/vars";
+// CSS BASE
+@import "lib/base/reset";
+@import "lib/base/base";
+
+// CSS LAYOUT
+@import "lib/layout/header";
+@import "lib/layout/footer";
+@import "lib/layout/layout";
+
+// CSS COMPONENT
+@import "../component/landing/login/login";
+@import "../component/landing/signup/signup";
+@import "../component/gallery/create-gallery/create-gallery";
+@import "../component/gallery/edit-gallery/edit-gallery";
+
+// CSS VIEW
+@import "../view/landing/landing"
